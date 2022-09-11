@@ -1,13 +1,216 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* base styles */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Quicksand";
+  color: orange;
+  margin: 1px;
+}
+.navbar {
+  padding: 10px;
+  display: flex;
+  background-color: grey;
+  align-items: center;
+  /* max-width: 600px; */
+  margin: 0 auto;
+  border-bottom: 2px solid #0bc989;
+}
+.navbar h1 {
+  color: #ffffff;
+}
+.navbar .links {
+  margin-left: auto;
+ 
+}
+.navbar a {
+  margin-left: 16px;
+  text-decoration: underline;
+  padding: 6px;
+  color:blue;
+}
+.navbar a:hover {
+  color: #ffffff;
+}
+.content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #206d77 ;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.usercontainer {
+  padding: 10px 16px;
+  margin: 0px 0;
+  border-bottom: 1px solid #fafafa;
+  background-color: #206d77 ;
+  border-bottom: 2px solid #0bc989;
+}
+.usercontainer:hover {
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+}
+.usercontainer h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 8px;
+}
+.usercontainer a{
+  text-decoration: none;
+}
+
+
+.gamecontainer {
+  padding: 1px 1px;
+  margin: 0px 0;
+  border-bottom: 1px solid #fafafa;
+  background-color: #206d77 ;
+}
+.gamecontainer:hover {
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+}
+.gamecontainer h2 {
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+.gamecontainer a{
+  text-decoration: none;
+}
+
+
+.level h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 1px;
+}
+.level div {
+  margin: 2px 0;
+}
+.level button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* create new blog form */
+.create {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.create label {
+  text-align: left;
+  display: block;
+}
+.create h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 30px;
+}
+.create input, .create textarea, .create select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+.create button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 18px 36px 0 rgb(255, 0, 0);
+  border: #3542f1;
+  border-radius: 24px;
+}
+
+.card:focus {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  border: #3542f1;
+  border-radius: 24px;
+}
+
+/* Add some padding inside the card container */
+.cardcontainer {
+  padding: 12px 16px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  background-color: #206d77 ;
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(120, 175, 163, 0.849);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.scorecontainer {
+  padding: 10px 16px;
+  margin: 0px 0;
+  border-bottom: 1px solid blue;
+  background-color: crimson;
+  border-bottom: 2px solid blue;
+}
+.scorecontainer:hover {
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+}
+.scorecontainer h2{
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 8px;
+}
+.scorecontainer a{
+  text-decoration: none;
+}
+
+.quitbutton {
+  padding: 6px 20px;
+  text-align: center;
+  background-color: rgba(154, 182, 175, 0.849);
+  color: blue;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  position:relative;
+   top: 50%;
+   transform: translateY(30%);
+   transform: translateX(465%);
+}
+
+.loginbutton{
+  padding: 6px 20px;
+  text-align: center;
+  background-color: rgba(154, 182, 175, 0.849);
+  color: rgb(247, 247, 247);
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  position:relative;
+   top: 50%;
+   transform: translateY(30%);
+   transform: translateX(300%);
 }
