@@ -10,9 +10,7 @@ function LevelPage() {
     const [level, setLevel] = useState()
     const [levelNum, setLevelNum] = useState(1)
     const [trophy, setTrophy] = useState()
-    // const [loadNewLevel, setLoadNewLevel] = useState()
-    // const [showLevel, setShowLevel] = (true)
-    // const [isLoaded, setIsLoaded] = useState(false)
+
 
     useEffect(() => {
         fetch("http://localhost:9292/user/current")
@@ -40,10 +38,7 @@ function LevelPage() {
 
     }, [levelNum])
 
-    // function handleLevelClick(){
-    //     setShowLevel(!showLevel)
-    // }
-    
+
     const updateLevel = () => {
         fetch("http://localhost:9292/users/last", {
             method: "PATCH",
