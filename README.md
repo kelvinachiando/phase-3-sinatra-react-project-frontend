@@ -21,11 +21,12 @@ Users can log into the app, and play the game. They log in by writing their user
 5. You can also run this project through this live link provided below.
 
 # Live Link
-https://kelvinachiando.github.io/phase-3-react-sinatra-project-frontend/
+https://code-quiz-app-front.herokuapp.com/
 
-The back end to this project can be accessed through the following live link:
+# Git-Hub Link
 
-https://kelvinachiando.github.io/phase-3-sinatra-react-project-backend/
+ https://kelvinachiando.github.io/phase-3-sinatra-react-project-frontend/
+
 # Technologies Used
 1. React
 2. Javascript
