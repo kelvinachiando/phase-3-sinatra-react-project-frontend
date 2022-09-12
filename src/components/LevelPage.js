@@ -40,7 +40,7 @@ function LevelPage() {
 
 
     const updateLevel = () => {
-        fetch("http://localhost:9292/users/last", {
+        fetch("https://code-quiz-app-back.herokuapp.com/users/last", {
             method: "PATCH",
                 headers: {
                 "Content-Type": "application/json",

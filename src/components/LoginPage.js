@@ -6,7 +6,7 @@ function LoginPage() {
     
   
     useEffect(() => {
-      fetch('http://localhost:9292/avatars')
+      fetch('https://code-quiz-app-back.herokuapp.com/avatars')
       .then(res => res.json())
       .then(data => setAllAvatars(data))
     }, []);

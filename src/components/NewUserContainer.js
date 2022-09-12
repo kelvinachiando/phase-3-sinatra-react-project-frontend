@@ -28,7 +28,7 @@ function NewUserContainer({allAvatars}){
             level_id: 0
         };
         console.log(newUser)
-        fetch("http://localhost:9292/users", {
+        fetch("https://code-quiz-app-back.herokuapp.com/users", {
             method:'POST',
             headers: {
                 'Content-Type':'application/json',

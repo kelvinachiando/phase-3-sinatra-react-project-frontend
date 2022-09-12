@@ -10,11 +10,11 @@ function ScorePage() {
 
     useEffect(() => {
         
-        fetch("http://localhost:9292/users/ordered")
+        fetch("https://code-quiz-app-back.herokuapp.com/users/ordered")
             .then((resp)=>resp.json())
             .then((allUsers)=> setUserList(allUsers))
 
-            fetch("http://localhost:9292/trophies")
+            fetch("https://code-quiz-app-back.herokuapp.com/trophies")
             .then((resp)=>resp.json())
             .then((allTrophies)=> setTrophyList(allTrophies))
 
