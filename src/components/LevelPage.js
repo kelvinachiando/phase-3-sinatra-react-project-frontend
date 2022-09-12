@@ -13,7 +13,7 @@ function LevelPage() {
 
 
     useEffect(() => {
-        fetch("http://localhost:9292/user/current")
+        fetch("https://code-quiz-app-back.herokuapp.com/user/current")
         .then((resp)=>resp.json())
         .then((data)=>{
             setUser(data)
@@ -22,13 +22,13 @@ function LevelPage() {
     }, [])
 
     useEffect(() => {
-       fetch(`http://localhost:9292/levels/questions/${levelNum}`)
+       fetch(`https://code-quiz-app-back.herokuapp.com/levels/questions/${levelNum}`)
        .then((resp)=>resp.json())
        .then((levelData)=>{
            setLevel(levelData)
            // setIsLoaded(true)
         })
-        fetch(`http://localhost:9292/levels/trophy/${levelNum}`)
+        fetch(`https://code-quiz-app-back.herokuapp.com/levels/trophy/${levelNum}`)
        .then((resp)=>resp.json())
        .then((trophyData)=>{
            setTrophy(trophyData)
